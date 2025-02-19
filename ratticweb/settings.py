@@ -14,6 +14,8 @@
 #
 # GitHub: https://github.com/tildaslash/RatticWeb
 #
+import uuid
+uuid._uuid_generate_random = None
 from ConfigParser import RawConfigParser, NoOptionError
 from urlparse import urljoin
 import ldap
